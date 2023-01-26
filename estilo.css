@@ -1,0 +1,223 @@
+/*----------------- Implementacion de fuentes ----------------------*/
+@font-face 
+{
+    font-family: beaufort;
+    src: url(./fonts/BeaufortForLoL-OTF/BeaufortforLOL-Bold.otf);
+}
+
+@font-face 
+{
+    font-family: spiegel;
+    src: url(./fonts/Spiegel-OTF/Spiegel-Bold.otf);
+}
+
+/*------------------- Configuracion del cursor ---------------------*/
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'beaufort';
+    cursor: url("./assets/cursores/cursor1.png"),auto;
+}
+
+.carousel-indicators, .carousel-inner
+{
+    cursor: url("./assets/cursores/cursor1.png"),auto;
+}
+
+/*------------------- Configuracion del background ------------------*/
+body
+{
+    cursor: url("./assets/cursores/cursor1.png"),auto;
+    background-image: url("./assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0%; 
+}
+
+/*------------------- Header ------------------*/
+#header
+{
+    font-size: 20px;
+    background-color: #010a13;
+    color: #c89c3c;
+    text-align: center;
+}
+
+#opcion1, #opcion2, #opcion3, #opcion4
+{
+    color: #c89c3c;
+    margin-left: 11rem;
+}
+
+/*------------------- Content ------------------*/
+
+    /*------------------- Presentacion ------------------*/
+    #presentacion
+    {
+        font-size: 20px;
+        color: #c89c3c;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #foto-cv
+    {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        border: 1px solid #c89c3c;
+        margin-bottom: 0.5rem;
+        font-size: 22px;
+        font-variant: small-caps;
+    }
+
+    #nombre-principal
+    {
+        background-color: #010a13;
+        border-radius: 4px;
+        padding: 0.5rem;
+        opacity: 80%;
+    }
+
+    /*------------------- Buscador ------------------*/
+
+    #buscador-dinamico
+    {
+        color: #c89c3c;
+        background-color: #010a13;
+        opacity: 75%;
+        border: 1px solid #c89c3c;
+        font-size: 18px;
+        border-radius: 8px;
+        height: 3rem;
+        text-align: center;
+    }
+
+    .opcion-buscador
+    {
+        font-family: 'spiegel';
+        border-radius: 5px;
+        width: 33%;
+        height: 90%;
+        margin-top: 2px;
+        background-color: #010a13;
+        color: #c89c3c;
+        border: 0px solid black;
+    }
+
+    .opcion-buscador:hover
+    {
+        cursor: url("./assets/cursores/cursor1.png"),auto;
+    }
+
+    /*------------------- Carrusel ------------------*/
+    #informacion-campeones
+    {
+        margin-top: 2.5rem;
+        border: 1px solid #c89c3c;
+        border-radius: 18px;
+        text-align: left;
+        color: white;
+        height: 22rem;
+        margin-bottom: -1rem;
+    }
+
+    #carrusel
+    {   
+        border-radius: 5px;
+        width: 100%;
+        width: 96.5%;
+        margin-left: 1.7%;
+        border: 1px solid #c89c3c;
+    }
+
+    #foto-main-champ1,  #foto-main-champ2
+    {
+        height: 18.5rem;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    /*------------------- Info personal ------------------*/
+    #informacion-personal
+    {
+        margin-top: 2.5rem;
+        border: 1px solid #c89c3c;
+        border-radius: 18px;
+        text-align: left;
+        color: white;
+        height: 22rem;
+
+        font-size: 25px;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    legend
+    {
+        color: #c89c3c;
+        font-size: 22px;
+        text-align: center;
+        background-color: #010a13;
+        border-bottom: 1px solid #c89c3c;
+        border-radius: 18px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        opacity: 70%;
+    }
+
+    /* ----- */
+
+    #texto-complementario
+    {
+        border-radius: 8px;
+        font-family: 'beaufort';
+        text-align: center;
+        width: 100%;
+        color: white;
+        padding: 0.5rem;
+        margin-top: 0.3rem;
+        font-size: 18px;
+    }
+
+    /*------------------- Video youtube expositor ------------------*/
+
+    #video-expositor-youtube
+    {
+        border-radius: 10px;
+        border: 1px solid #c89c3c;
+        text-align: center;
+        width: 100%;
+        height: 50rem;
+    }
+
+
+/* Responsive media-querys */
+@media (max-width: 1400px) 
+{
+    #opcion1, #opcion2, #opcion3, #opcion4
+    {
+        margin-left: 0rem;
+    }
+
+    #carrusel, #presentacion
+    {
+        width: 99%;
+    }
+
+    #descripcion-carrusel
+    {
+        width: 99%;
+    }
+
+    #video-expositor-youtube
+    {
+        width: 99%;
+    }
+}
