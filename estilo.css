@@ -11,25 +11,48 @@
     src: url(./fonts/Spiegel-OTF/Spiegel-Bold.otf);
 }
 
-/*------------------- Configuracion del cursor ---------------------*/
+/*--------- Configuracion del cursor y estilado general ------------*/
 *
 {
     margin: 0;
     padding: 0;
     font-family: 'beaufort';
     cursor: url("./assets/cursores/cursor1.png"),auto;
+
 }
 
-.carousel-indicators, .carousel-inner
+li
 {
-    cursor: url("./assets/cursores/cursor1.png"),auto;
+    list-style: none;
 }
+
+legend
+{
+    color: #c89c3c;
+    font-size: 22px;
+    text-align: center;
+    background-color: #010a13;
+    border-bottom: 1px solid #c89c3c;
+    border-radius: 18px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    opacity: 85%;
+    margin-bottom: 1.5rem;
+    padding: 0.3rem;
+}
+
+.separador-lineal
+{
+    border: 1px solid #c89c3c;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 
 /*------------------- Configuracion del background ------------------*/
 body
 {
-    cursor: url("./assets/cursores/cursor1.png"),auto;
-    background-image: url("./assets/background.jpg");
+    background-image: url("./assets/city-background.jfif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -39,64 +62,46 @@ body
     margin-right: 0%; 
 }
 
-/*------------------- Header ------------------*/
+/*#region------------------- Header ------------------*/
 #header
 {
     font-size: 20px;
     background-color: #010a13;
     color: #c89c3c;
     text-align: center;
+    opacity: 85%;
+    /* animation: scale-in-hor-right 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
 }
 
-#opcion1, #opcion2, #opcion3, #opcion4
+#opcion1, #opcion2, #opcion3
 {
     color: #c89c3c;
-    margin-left: 11rem;
+    display: inline-block;
+    margin-left: 18vw;
+    /* animation: scale-in-hor-left 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
 }
 
-/*------------------- Content ------------------*/
+.separador-lineal-header
+{
+    border: 1px solid #c89c3c;
+}
 
-    /*------------------- Presentacion ------------------*/
-    #presentacion
-    {
-        font-size: 20px;
-        color: #c89c3c;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    #foto-cv
-    {
-        width: 120px;
-        height: 120px;
-        border-radius: 100%;
-        border: 1px solid #c89c3c;
-        margin-bottom: 0.5rem;
-        font-size: 22px;
-        font-variant: small-caps;
-    }
-
-    #nombre-principal
-    {
-        background-color: #010a13;
-        border-radius: 4px;
-        padding: 0.5rem;
-        opacity: 80%;
-    }
+/*------------------- Contenido ------------------*/
 
     /*------------------- Buscador ------------------*/
-
     #buscador-dinamico
     {
         color: #c89c3c;
         background-color: #010a13;
-        opacity: 75%;
+        opacity: 85%;
         border: 1px solid #c89c3c;
         font-size: 18px;
         border-radius: 8px;
         height: 3rem;
         text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        /* animation: scale-in-hor-center 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
     }
 
     .opcion-buscador
@@ -116,63 +121,92 @@ body
         cursor: url("./assets/cursores/cursor1.png"),auto;
     }
 
-    /*------------------- Carrusel ------------------*/
-    #informacion-campeones
+    /*------------------- Columna Info personal ------------------*/
+    #informacion-personal
     {
-        margin-top: 2.5rem;
         border: 1px solid #c89c3c;
         border-radius: 18px;
         text-align: left;
         color: white;
-        height: 22rem;
-        margin-bottom: -1rem;
+        font-size: 20px;
+        background-color: #010a13;
+        opacity: 85%;
+        padding: 1rem;
+        position: relative;
+    }
+
+    #contenedor-foto-cv
+    {
+        position: absolute;
+        margin-left: 60%;
+        margin-top: 1.5rem;
+    }
+
+    #foto-cv
+    {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        border: 1px solid #c89c3c;
+        margin-bottom: 0.5rem;
+        font-size: 22px;
+        font-variant: small-caps;
+    }
+
+    #btn-verMas
+    {
+        border: 1px solid #c89c3c;
+        border-radius: 18px;
+        font-size: 20px;
+        width: 100%;
+        height: 3.2rem;
+        margin-top: 1.5rem;
+        background-color: #010a13;
+        opacity: 85%;
+        color: #c89c3c;
+    }
+
+    /*------------------- Columna Carrusel ------------------*/
+    #expositor-trabajos
+    {
+        border: 1px solid #c89c3c;
+        border-radius: 18px;
+        text-align: left;
+        color: white;
+        font-size: 25px;
+        background-color: #010a13;
+        padding: 1rem;
+        opacity: 85%;
     }
 
     #carrusel
     {   
+        border: 1px solid #c89c3c;
         border-radius: 5px;
         width: 100%;
-        width: 96.5%;
-        margin-left: 1.7%;
-        border: 1px solid #c89c3c;
+        height: 100%;
     }
 
     #foto-main-champ1,  #foto-main-champ2
     {
-        height: 18.5rem;
-        width: 100%;
         border-radius: 5px;
+        height: 19.4rem;
+        width: 100%;
     }
 
-    /*------------------- Info personal ------------------*/
-    #informacion-personal
+    /*------------------- Descripcion personal ------------------*/
+    #descripcion-personal
     {
-        margin-top: 2.5rem;
         border: 1px solid #c89c3c;
         border-radius: 18px;
         text-align: left;
         color: white;
-        height: 22rem;
-
         font-size: 25px;
-        list-style: none;
-        text-decoration: none;
-    }
-
-    legend
-    {
-        color: #c89c3c;
-        font-size: 22px;
-        text-align: center;
         background-color: #010a13;
-        border-bottom: 1px solid #c89c3c;
-        border-radius: 18px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-        opacity: 70%;
+        opacity: 85%;
+        padding: 1rem;
+        margin-bottom: 1rem;
     }
-
-    /* ----- */
 
     #texto-complementario
     {
@@ -183,23 +217,50 @@ body
         color: white;
         padding: 0.5rem;
         margin-top: 0.3rem;
-        font-size: 18px;
+        font-size: 20px;
     }
 
-    /*------------------- Video youtube expositor ------------------*/
-
-    #video-expositor-youtube
+    /*------------------- Copyright ------------------*/
+    #texto-copyright
     {
-        border-radius: 10px;
-        border: 1px solid #c89c3c;
+        font-size: 20px;
+        color: #c89c3c;
+        opacity: 60%;
         text-align: center;
-        width: 100%;
-        height: 50rem;
     }
 
 
-/* Responsive media-querys */
-@media (max-width: 1400px) 
+/*------------------- Contenido "Ver mas"------------------*/
+
+    /*------------------- Informacion academica y laboral ------------------*/
+    #informacion-academica
+    {
+        border: 1px solid #c89c3c;
+        border-radius: 18px;
+        text-align: left;
+        color: white;
+        font-size: 20px;
+        background-color: #010a13;
+        opacity: 85%;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    #informacion-laboral
+    {
+        border: 1px solid #c89c3c;
+        border-radius: 18px;
+        text-align: left;
+        color: white;
+        font-size: 20px;
+        background-color: #010a13;
+        opacity: 85%;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+/*====================================== Responsive Media-Querys ======================================*/
+/* @media (max-width: 1400px) 
 {
     #opcion1, #opcion2, #opcion3, #opcion4
     {
@@ -220,4 +281,139 @@ body
     {
         width: 99%;
     }
-}
+} */
+
+/*====================================== Animaciones ======================================*/
+/* ----------------------------------------------
+ * Generated by Animista
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/*------------------------------ Animaciones de entradas  ------------------------------*/
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /**
+ * ----------------------------------------
+ * animation slide-in-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+
+  /*------------------------------ Animaciones de salidas ------------------------------*/
+  
+  /**
+ * ----------------------------------------
+ * animation slide-out-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-out-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+  }
+  @keyframes slide-out-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+  }
+
+  /**
+ * ----------------------------------------
+ * animation slide-out-right || animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-out-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+  }
+  @keyframes slide-out-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+  }
+  
+  

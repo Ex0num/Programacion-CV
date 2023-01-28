@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Julián Pizarro</title>
+    <title>CV - Gabriel Lopez Gasal</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
 
-    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/sketch.png">
 
 </head>
 <body>
@@ -21,51 +22,67 @@
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
-            <!-- <img src="./assets/logo.jpg" height="50px" width="50px" style="border-radius: 10px;"> -->
-
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="/home" class="nav-link px-2" id="opcion1">Inicio</a></li>
-              <li><a href="/quiensoy" class="nav-link px-2" id="opcion2">Quien soy</a></li>
-              <li><a href="/salajuegos" class="nav-link px-2" id="opcion3">Contacto</a></li>
-              <li><a href="/salajuegos" class="nav-link px-2" id="opcion4">Mi recorrido</a></li>       
+              <li><a href="/Programacion-CV/index.html" class="nav-link px-2" id="opcion1">Inicio</a></li>
+              <li><a href="/Programacion-CV/contacto.html" class="nav-link px-2" id="opcion2">Contacto</a></li>
+              <li><a href="/salajuegos" class="nav-link px-2" id="opcion3">Mi recorrido</a></li>       
             </ul>
+   
           </div>
         </div>
+
+        <div class="separador-lineal-header"></div>
+        
     </header>
 
     <!-- Contenido -->
-    <div class="container">
+    <div class="container" id="contenido-total">
 
       <div class="row">
 
         <div class="col">
-
-          <div class="container" id="presentacion">
-            <section class="py-3 my-4">
-              <img src="./assets/foto-cv.PNG" id="foto-cv">
-              <ul class="nav justify-content-center border-bottom pb-4 mb-1">
-                <li class="nav-item" id="nombre-principal">Julián Gabriel Pizarro</li>
-              </ul>
-              <!-- <p class="text-center text-reset">&copy; Ex0num</p> -->
-            </section>
-          </div>
-
+          
           <div id="buscador-dinamico">
-            <button class="opcion-buscador">Atributos</button>
-            <button class="opcion-buscador">Objetivos</button>
-            <button class="opcion-buscador">Mi opinión</button>
+            <button class="opcion-buscador" id="btn-atributos">Atributos</button>
+            <button class="opcion-buscador" id="btn-objetivos">Objetivos</button>
           </div>
 
-          <!-- Sub-division de doble columna -->
+          <!-- Sub-division de doble columna dentro de fila -->
           <div class="row">
 
+            <!-- Columna info-personal -->
             <div class="col">
 
-              <section id="informacion-campeones">
-                <legend>Mejores campeones</legend>
+              <section id="informacion-personal">
+                <legend>Información personal</legend>
+                <ul>
 
+                  <div id="contenedor-foto-cv">
+                    <img src="./assets/foto-cv.jpeg" id="foto-cv">
+                  </div>
+
+                  <li>Nombre: Gabriel Lopez Gasal</li>
+                  <li>Edad: 19 años.</li>
+                  <li>País: Argentina</li>
+                  <li>Localidad: CABA</li>
+                  <li>Celular: +54 1131680937</li>
+                  <li>Telefono: 4282-3779</li>
+                  <li>Correo: gabriel.lopez.gasal@gmail.com</li>
+                  
+                </ul>
+              </section>
+
+              <button id="btn-verMas">Ver más</button>
+
+            </div>
+
+            <!-- Columna carrusel -->
+            <div class="col">
+              
+              <section id="expositor-trabajos">
+                <legend>Mis mejores trabajos</legend>
                 <div id="carrusel" class="carousel slide" data-bs-ride="true">
-
+  
                   <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 0"></button>
                     <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" aria-label="Slide 1"></button>
@@ -73,15 +90,15 @@
       
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="./assets/champion-1.jpg" class="d-block w-100" alt="Foto del primer campeón main de Julian Pizarro" id="foto-main-champ1">
-                      <div class="carousel-caption d-none d-md-block">
+                      <img src="./assets/champion-1.jpg" alt="Foto del primer campeón main de Julian Pizarro" id="foto-main-champ1">
+                      <div class="carousel-caption">
                         <h5 class="h5Carrousel">Lissandra</h5>
                       </div>
                     </div>
       
                     <div class="carousel-item">
-                      <img src="./assets/champion-2.jpg" class="d-block w-100" alt="Foto del segundo campeón main de Julian Pizarro"  id="foto-main-champ2">
-                      <div class="carousel-caption d-none d-md-block">
+                      <img src="./assets/champion-2.jpg" alt="Foto del segundo campeón main de Julian Pizarro"  id="foto-main-champ2">
+                      <div class="carousel-caption ">
                         <h5 class="h5Carrousel">Vex</h5>
                       </div>
                     </div>
@@ -98,47 +115,86 @@
                   </div>
       
                 </div>
-                
               </section>
 
-            </div>
-
-            <div class="col">
-
-              <section id="informacion-personal">
-                <legend>Información personal</legend>
-                <ul>
-                  <li>Nombre: Julian Gabriel Pizarro.</li>
-                  <li>Edad: 23 años.</li>
-                  <li>País: Argentina</li>
-                  <li>Nacimiento: 23/2/2002</li>
-                  <li>Posición main: Midlaner</li>
-                  <li>Posición auxiliar: Jungler</li>
-                </ul>
-              </section>
 
             </div>
 
           </div>
 
+          <div class="separador-lineal"></div>
+        
+          <section id="descripcion-personal">
+            <legend>Descripción personal</legend>
+            <p id="texto-complementario">
+              Me considero una persona muy<strong> activa </strong>y<strong> exigente </strong>, tanto con las personas que me rodean 
+              como conmigo mismo. Soy bastante <strong>estructurado</strong> y <strong>disciplinado</strong>, y al mismo tiempo, muy expresivo y
+              <strong>comunicativo</strong>. No soy capaz de hacer cosas a "medio-pelo" o de forma mediocre, o están bien hechas 
+              o directamente no las hago. Soy bastante<strong> perfeccionista </strong>y<strong> observador </strong>, para mí... cada detalle cuenta.
+            </p>
+          </section>
+
+          <p id="texto-copyright">&copy; https://github.com/Ex0num </p>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Contenido "Ver mas" -->
+    <div class="container" hidden id="contenido-verMas">
+
+      <!-- Sub-division de doble columna dentro de fila -->
+      <div class="row">
+
+        <div class="col">
+          <section id="informacion-academica">
+            <legend>Información académica</legend>
+            <ul>
+              <li>
+                Técnico Superior en Programación.<br>
+                Universidad Tecnológica Nacional. (2020-2022)
+              </li>
+    
+              <div class="separador-lineal"></div>
+    
+              <li>
+                First Certificate in English.<br>
+                Cambridge Assessment. (2021)
+              </li>
+              
+            </ul>
+          </section>
+        </div>
+
+        <div class="col">
+          <section id="informacion-laboral">
+            <legend>Experiencia laboral</legend>
+            <ul>
+              <li>
+                PWC Industries. (Auditor Inglés) <br>
+                (2023 - 3 meses)
+              </li>
+            </ul>
+          </section>
         </div>
 
       </div>
 
-      <p id="texto-complementario">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta itaque cumque qui, animi velit eaque asperiores mollitia, iste nobis facere maiores eum eius dolorum fugit architecto in officiis autem?
-        Qui officiis fugit vitae ex explicabo nobis inventore quisquam illo consequatur laboriosam sit repudiandae beatae ea, error quam reiciendis voluptatum eos quibusdam neque? Eum cum praesentium totam quisquam, mollitia ad.
-        Porro nemo dolorum reiciendis illum dolore quas cum, delectus quaerat inventore neque ipsa sequi saepe voluptatem, velit et nam veniam molestias sunt? Corporis minus incidunt error officiis dolore quis veritatis!
-      </p>
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/bbyiMzRRZoE" title="YouTube video player" 
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-      gyroscope; picture-in-picture; web-share" allowfullscreen id="video-expositor-youtube">
-      </iframe>
-
+      
     </div>
-
+          
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-</body>
+    <script src="./codigo.js"></script>
+
+  </body>
 </html>
+
+
+<!-- TO DO -->
+<!-- 
+  - Agregar fotos visuales de trabajos realizados a pagina principal carrusel (Minimo 3)
+  - Arreglar opacidad de las fotos
+
+  -Realizar 3ra pantalla con la galeria de tecnologias y lenguajes manejados
+ -->
