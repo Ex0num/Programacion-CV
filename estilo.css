@@ -41,6 +41,17 @@ legend
     padding: 0.3rem;
 }
 
+.h5Carrousel
+{
+  background-color: #010a13;
+  color: #c89c3c;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 1px solid #c89c3c;
+  padding: 0.2rem;
+  margin-top: 0.2rem;
+}
+
 .separador-lineal
 {
     border: 1px solid #c89c3c;
@@ -48,11 +59,28 @@ legend
     margin-bottom: 2rem;
 }
 
+#btn-verMas, #btn-verMas2, #btn-volver, #btn-volver2
+{
+    border: 1px solid #c89c3c;
+    border-radius: 18px;
+    font-size: 20px;
+    width: 100%;
+    height: 3.2rem;
+    margin-top: 1.5rem;
+    background-color: #010a13;
+    opacity: 85%;
+    color: #c89c3c;
+}
+
+#btn-verMas, #btn-verMas2
+{
+  animation: pulsate-bck 2.5s ease-in-out infinite both;
+}
 
 /*------------------- Configuracion del background ------------------*/
 body
 {
-    background-image: url("./assets/city-background.jfif");
+    background-image: url("./assets/background-2.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -70,7 +98,6 @@ body
     color: #c89c3c;
     text-align: center;
     opacity: 85%;
-    /* animation: scale-in-hor-right 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
 }
 
 #opcion1, #opcion2, #opcion3
@@ -78,15 +105,17 @@ body
     color: #c89c3c;
     display: inline-block;
     margin-left: 18vw;
-    /* animation: scale-in-hor-left 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
-}
+    animation: tracking-in-expand 3.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    padding-bottom: 0px;
+    margin-bottom: 4px;
+  }
 
 .separador-lineal-header
 {
     border: 1px solid #c89c3c;
 }
 
-/*------------------- Contenido ------------------*/
+/*------------------- Contenido principal ------------------*/
 
     /*------------------- Buscador ------------------*/
     #buscador-dinamico
@@ -101,19 +130,18 @@ body
         text-align: center;
         margin-bottom: 2rem;
         margin-top: 2rem;
-        /* animation: scale-in-hor-center 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
     }
 
     .opcion-buscador
     {
         font-family: 'spiegel';
-        border-radius: 5px;
-        width: 33%;
+        width: 25%;
         height: 90%;
-        margin-top: 2px;
+        margin-bottom: 6px;       
         background-color: #010a13;
         color: #c89c3c;
         border: 0px solid black;
+        animation: tracking-in-expand 2.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     }
 
     .opcion-buscador:hover
@@ -153,19 +181,6 @@ body
         font-variant: small-caps;
     }
 
-    #btn-verMas
-    {
-        border: 1px solid #c89c3c;
-        border-radius: 18px;
-        font-size: 20px;
-        width: 100%;
-        height: 3.2rem;
-        margin-top: 1.5rem;
-        background-color: #010a13;
-        opacity: 85%;
-        color: #c89c3c;
-    }
-
     /*------------------- Columna Carrusel ------------------*/
     #expositor-trabajos
     {
@@ -187,15 +202,17 @@ body
         height: 100%;
     }
 
-    #foto-main-champ1,  #foto-main-champ2
+    #foto-trabajo1,  #foto-trabajo2
     {
         border-radius: 5px;
         height: 19.4rem;
         width: 100%;
+        animation: tracking-in-expand 3.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
     }
 
     /*------------------- Descripcion personal ------------------*/
-    #descripcion-personal
+    #contenedor-descripcion-personal
     {
         border: 1px solid #c89c3c;
         border-radius: 18px;
@@ -208,7 +225,7 @@ body
         margin-bottom: 1rem;
     }
 
-    #texto-complementario
+    #descripcion-personal
     {
         border-radius: 8px;
         font-family: 'beaufort';
@@ -218,6 +235,7 @@ body
         padding: 0.5rem;
         margin-top: 0.3rem;
         font-size: 20px;
+        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     }
 
     /*------------------- Copyright ------------------*/
@@ -228,7 +246,6 @@ body
         opacity: 60%;
         text-align: center;
     }
-
 
 /*------------------- Contenido "Ver mas"------------------*/
 
@@ -247,6 +264,50 @@ body
     }
 
     #informacion-laboral
+    {
+        border: 1px solid #c89c3c;
+        border-radius: 18px;
+        text-align: left;
+        color: white;
+        font-size: 20px;
+        background-color: #010a13;
+        opacity: 85%;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+  /*------------------- Contenido "Ver mas 2"------------------*/
+
+    /*------------------- Fila Carrusel ------------------*/
+    #expositor-tecnologias
+    {
+        border: 1px solid #c89c3c;
+        border-radius: 18px;
+        text-align: left;
+        color: white;
+        font-size: 25px;
+        background-color: #010a13;
+        padding: 1rem;
+        opacity: 85%;
+        margin-top: 2rem;
+    }
+
+    #carrusel-tecnologias
+    {   
+        border: 1px solid #c89c3c;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .foto-tecnologia-aprendida
+    {
+        border-radius: 5px;
+        height: 19.4rem;
+        width: 100%;
+    }
+
+    #informacion-preferencias
     {
         border: 1px solid #c89c3c;
         border-radius: 18px;
@@ -293,12 +354,12 @@ body
 
 /*------------------------------ Animaciones de entradas  ------------------------------*/
 
-/**
+  /**
  * ----------------------------------------
  * animation slide-in-left
  * ----------------------------------------
  */
-@-webkit-keyframes slide-in-left {
+  @-webkit-keyframes slide-in-left {
     0% {
       -webkit-transform: translateX(-1000px);
               transform: translateX(-1000px);
@@ -328,7 +389,7 @@ body
  * animation slide-in-right
  * ----------------------------------------
  */
-@-webkit-keyframes slide-in-right {
+  @-webkit-keyframes slide-in-right {
     0% {
       -webkit-transform: translateX(1000px);
               transform: translateX(1000px);
@@ -352,7 +413,103 @@ body
       opacity: 1;
     }
   }
-  
+
+  /**
+ * ----------------------------------------
+ * animation fade-in-fwd
+ * ----------------------------------------
+ */
+  @-webkit-keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+
+  /* Esta es solo para texto */
+  /**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+  @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/*------------------------------ Animaciones de atencion ------------------------------*/
+
+  /**
+  * ----------------------------------------
+  * animation pulsate-bck
+  * ----------------------------------------
+  */
+  @-webkit-keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
 
   /*------------------------------ Animaciones de salidas ------------------------------*/
   
@@ -361,7 +518,7 @@ body
  * animation slide-out-left
  * ----------------------------------------
  */
-@-webkit-keyframes slide-out-left {
+  @-webkit-keyframes slide-out-left {
     0% {
       -webkit-transform: translateX(0);
               transform: translateX(0);
@@ -391,7 +548,7 @@ body
  * animation slide-out-right || animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
  * ----------------------------------------
  */
-@-webkit-keyframes slide-out-right {
+  @-webkit-keyframes slide-out-right {
     0% {
       -webkit-transform: translateX(0);
               transform: translateX(0);
@@ -415,5 +572,37 @@ body
       opacity: 0;
     }
   }
+
+  /* Esta es solo para texto */
+  /**
+ * ----------------------------------------
+ * animation tracking-out-contract
+ * ----------------------------------------
+ */
+  @-webkit-keyframes tracking-out-contract {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+  }
+  @keyframes tracking-out-contract {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+  }
+
   
   
