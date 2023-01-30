@@ -1,3 +1,5 @@
+/* ============================================ I N D E X (pag) ================================================== */
+
 /*----------------- Implementacion de fuentes ----------------------*/
 @font-face 
 {
@@ -631,6 +633,7 @@ body
       padding: 1rem;
       position: relative;
       margin-top: 2rem;
+      margin-bottom: 2rem;
   }
 
   #input-mail, #input-razon
@@ -651,7 +654,7 @@ body
     margin-top: 1.5rem;
   }
 
-  #btn-enviar, #btn-volver-contacto
+  #btn-enviar
   {
     border: 1px solid #c89c3c;
     border-radius: 18px;
@@ -662,9 +665,59 @@ body
     background-color: #010a13;
     opacity: 85%;
     color: #c89c3c;
-}
+  }
 
-#btn-volver-contacto
-{
-  margin-bottom: 1.5rem;
-}
+  /* ============================================ MI  R E C O R R I D O (pag) ================================================== */
+  #contenedor-descripcion-recorrido
+  {
+      border: 1px solid #c89c3c;
+      border-radius: 18px;
+      text-align: left;
+      color: white;
+      font-size: 25px;
+      background-color: #010a13;
+      opacity: 85%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+  }
+
+  #descripcion-recorrido
+  {
+      border-radius: 8px;
+      font-family: 'beaufort';
+      text-align: center;
+      width: 100%;
+      color: white;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      font-size: 20px;
+      animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  }
+
+  #input-usuario
+  {
+    border: 1px solid #c89c3c;
+    border-radius: 18px;
+    font-size: 20px;
+    width: 100%;
+    height: 3.2rem;
+    background-color: #010a13;
+    opacity: 85%;
+    color: #c89c3c;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  #btn-buscar-recorrido
+  {
+    border: 1px solid #c89c3c;
+    border-radius: 18px;
+    font-size: 20px;
+    width: 100%;
+    height: 3.2rem;
+    margin-top: 1.5rem;
+    background-color: #010a13;
+    opacity: 85%;
+    color: #c89c3c;
+  }
