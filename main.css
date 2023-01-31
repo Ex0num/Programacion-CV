@@ -330,14 +330,6 @@ body
     margin-top: 1.5rem;
   }
 
-  #foto-cv
-  {
-    width: 80px;
-    height: 80px;
-    margin-top: 10px;
-    margin-right: 25px;
-  }
-
   /* RESPONSIVE - SECCION 2 */
   #btn-volver
   {
@@ -348,6 +340,22 @@ body
   {
     margin-bottom: 2rem;
     width: 99%;
+  }
+}
+
+@media (max-width: 850px) 
+{
+  #foto-cv
+  {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+
+  #opcion1, #opcion2, #opcion3
+  {
+    margin: 0px;
   }
 }
 
