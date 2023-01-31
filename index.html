@@ -39,7 +39,6 @@
     <div class="container" id="contenido-1erSeccion">
 
       <div class="row">
-
         <div class="col">
           
           <div id="buscador-dinamico">
@@ -47,8 +46,8 @@
             <button class="opcion-buscador" id="btn-objetivos">Objetivos</button>
           </div>
 
-          <!-- Sub-division de doble columna dentro de fila -->
-          <div class="row">
+          <!-- Sub-division de doble columna dentro de fila || ATRIBUTOS -->
+          <div class="row" id="fila-atributos">
 
             <!-- Columna info-personal -->
             <div class="col">
@@ -121,6 +120,36 @@
 
           </div>
 
+          <!-- Sub-division de doble columna dentro de fila || OBJETIVOS -->
+          <div class="row" id="fila-objetivos" hidden>
+
+            <!-- Columna info-personal -->
+            <div class="col">
+
+              <section id="informacion-personal">
+                <legend>Mis objetivos</legend>
+                <ul>
+                  <li>✅ Ser considerado Trainee.</li>
+                  <li>✅ Recibirme de Técnico en Programación.</li>
+                  <li>✅ Ser considerado Junior.</li>
+                  <li>✅ Trabajar para una empresa local.</li>
+                  <li>❌ Adquirir 3 años de experiencia en el rubro.</li>
+                  <li>❌ Ser considerado Semi-Senior.</li>
+                  <li>❌ Recibirme de Técnico en Sistemas Informáticos.</li>
+                  <li>❌ Adquirir 5 años de experiencia en el rubro.</li>
+                  <li>❌ Ser considerado Senior.</li>
+                  <li>❌ Trabajar para una empresa extranjera.</li>
+                  <li>❌ Recibirme de Licenciado en Sistemas Informáticos.</li>
+                  <li>❌ Recibirme de Ingeniero en Sistemas Informáticos.</li>
+                </ul>
+              </section>
+
+              <button id="btn-verMas">Ver más</button>
+
+            </div>
+            
+          </div>          
+
           <div class="separador-lineal"></div>
         
           <section id="contenedor-descripcion-personal">
@@ -137,13 +166,14 @@
 
         </div>
       </div>
+
     </div>
 
     <!-- Contenido "Ver mas" (Seccion 2) -->
     <div class="container" hidden id="contenido-2daSeccion">
 
       <!-- Sub-division de doble columna dentro de fila -->
-      <div class="row">
+      <div class="row" style="padding: 0.3rem;">
 
         <div class="col">
           <section id="informacion-academica">
@@ -177,8 +207,10 @@
           </section>
         </div>
 
-        <button id="btn-volver">Volver</button>
-        <button id="btn-verMas2">Ver más</button>
+        <div style="text-align: center;">
+          <button id="btn-volver">Volver</button>
+          <button id="btn-verMas2">Ver más</button>
+        </div>
 
       </div>
 

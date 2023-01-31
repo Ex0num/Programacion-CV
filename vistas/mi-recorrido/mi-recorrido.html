@@ -37,23 +37,33 @@
         
     </header>
 
-    <section id="contenedor-descripcion-recorrido">
-        <legend>¡Bienvenido/a a mi recorrido!</legend>
+    <!-- Contenido "Unica seccion" -->
+    <div class="container" id="contenido-contacto">
 
-        <p id="descripcion-recorrido">
-        A continuación podrás ver mi recorrido y mis últimos trabajos realizados. 
-        Links y todo el acceso directo a la página de Github. ¡Podés buscar el tuyo también, probalo!
-        </p>
+      <!-- Sub-division de doble columna dentro de fila -->
+      <div class="row">
 
-        <h1 style="text-align: center;">PROXIMAMENTE</h1>
+        <div class="col">
+          <section id="contenedor-descripcion-recorrido">
+            <legend>¡Bienvenido/a a mi recorrido!</legend>
+    
+            <p id="descripcion-recorrido">
+            A continuación podrás ver mi recorrido y mis últimos trabajos realizados. 
+            Links y todo el acceso directo a la página de Github. ¡Podés buscar el tuyo también, probalo!
+            </p>
+    
+            <h1 style="text-align: center;">PROXIMAMENTE</h1>
+    
+            <input type="text" placeholder="Nombre público de usuario. Ej: Ex0num" value="ex0num" id="input-usuario">
+            <button id="btn-buscar-recorrido">Buscar</button>
+          </section>
+        </div>
 
-        <input type="text" placeholder="Nombre público de usuario. Ej: Ex0num" value="ex0num" id="input-usuario">
-        <button id="btn-buscar-recorrido">Buscar</button>
+      </div>
 
-      </section>
+    </div>
 
     <script src="./mi-recorrido.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>
 </html>

@@ -43,24 +43,28 @@
       <!-- Sub-division de doble columna dentro de fila -->
       <div class="row">
 
-        <section id="agradecimiento-contacto">
-          <legend>¡Muchas gracias por su interés!</legend>
-          <ul>
-            <li>
-              Se agradece enormemente el interés de contacto. Aquí se le provee <br>
-              la opción de enviarme un notificado con la razón y su información para poder hacer contacto. 
-            </li>
-          </ul>
-        </section>
+        <div class="col">
 
-        <form id="informacion-contacto">
-            <legend>Información de contacto</legend>
-
-            <input type="email" required placeholder="Ingrese su mail de contacto" id="input-mail">
-            <input type="text" required placeholder="Ingrese su razón de contacto. Ej: Oferta laboral." id="input-razon">
-
-            <button type="submit" id="btn-enviar">Enviar</button>
-        </form>
+          <section id="agradecimiento-contacto">
+            <legend>¡Muchas gracias por su interés!</legend>
+            <ul>
+              <li id="texto-contacto">
+                Se agradece enormemente el interés de contacto. Aquí se le provee <br>
+                la opción de enviarme un notificado con la razón y su información para poder hacer contacto. 
+              </li>
+            </ul>
+          </section>
+  
+          <form id="informacion-contacto">
+              <legend>Información de contacto</legend>
+  
+              <input type="email" required placeholder="Ingrese su mail de contacto" id="input-mail">
+              <input type="text" required placeholder="Ingrese su razón de contacto. Ej: Oferta laboral." id="input-razon">
+  
+              <button type="submit" id="btn-enviar">Enviar</button>
+          </form>
+          
+        </div>
 
       </div>
 

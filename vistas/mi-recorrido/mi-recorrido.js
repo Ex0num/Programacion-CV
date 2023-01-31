@@ -11,7 +11,10 @@ async function obtenerGitHub(nombrePublicoGitHub)
     const url_API = "https://api.github.com/users/" + nombrePublicoGitHub;
     
     var respuesta;
-    respuesta = await fetch(url_API);
+    //respuesta = await fetch(url_API);
+    respuesta = fetch(`https://source.unsplash.com/1600x900/?beach`);
 
     console.log(respuesta);
 }
+
+// PROXIMAMENTE...
