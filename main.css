@@ -321,6 +321,133 @@ body
         margin-top: 2rem;
     }
 
+
+/* ============================================ C O N T A C T O (pag) ================================================== */
+#contenido-contacto
+{
+  animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#agradecimiento-contacto
+{
+    border: 1px solid #c89c3c;
+    border-radius: 18px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: #010a13;
+    opacity: 85%;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#texto-contacto
+{
+  animation: tracking-in-expand 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+#informacion-contacto
+{
+    border: 1px solid #c89c3c;
+    border-radius: 18px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    background-color: #010a13;
+    opacity: 85%;
+    padding: 1rem;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#input-mail, #input-razon
+{
+  border: 1px solid #c89c3c;
+  border-radius: 18px;
+  font-size: 20px;
+  width: 100%;
+  height: 3.2rem;
+  background-color: #010a13;
+  opacity: 85%;
+  color: #c89c3c;
+  text-align: center;
+  animation: tracking-in-expand 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+#input-razon
+{
+  margin-top: 1.5rem;
+}
+
+#btn-enviar
+{
+  border: 1px solid #c89c3c;
+  border-radius: 18px;
+  font-size: 20px;
+  width: 100%;
+  height: 3.2rem;
+  margin-top: 1.5rem;
+  background-color: #010a13;
+  opacity: 85%;
+  color: #c89c3c;
+}
+
+/* ============================================ MI  R E C O R R I D O (pag) ================================================== */
+#contenedor-descripcion-recorrido
+{
+    border: 1px solid #c89c3c;
+    border-radius: 18px;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+    background-color: #010a13;
+    opacity: 85%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+#descripcion-recorrido
+{
+    border-radius: 8px;
+    font-family: 'beaufort';
+    text-align: center;
+    width: 100%;
+    color: white;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    font-size: 20px;
+    animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+#input-usuario
+{
+  border: 1px solid #c89c3c;
+  border-radius: 18px;
+  font-size: 20px;
+  width: 100%;
+  height: 3.2rem;
+  background-color: #010a13;
+  opacity: 85%;
+  color: #c89c3c;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+#btn-buscar-recorrido
+{
+  border: 1px solid #c89c3c;
+  border-radius: 18px;
+  font-size: 20px;
+  width: 100%;
+  height: 3.2rem;
+  margin-top: 1.5rem;
+  background-color: #010a13;
+  opacity: 85%;
+  color: #c89c3c;
+}
+
 /*====================================== Responsive Media-Querys ======================================*/
 /* Responsiveness de los BOTONES ("Ver mas, Volver") */
 @media (max-width: 1400px) 
@@ -360,22 +487,6 @@ body
 }
 
 /* Responsiveness de la FOTO-CV (1°) */
-@media (min-width: 780px) 
-{
-  #foto-cv
-  {
-    width: 14rem;
-    height: 14rem;
-  }
-
-  #contenedor-foto-cv
-  {
-    margin: 0px;  
-    margin-left: 55%;
-  }
-}
-
-/* Responsiveness de la FOTO-CV (2°) */
 @media (max-width: 540px)
 {   
   #foto-cv
@@ -387,7 +498,7 @@ body
   }
 }
 
-/* Responsiveness de la FOTO-CV (3°) */
+/* Responsiveness de la FOTO-CV (2°) */
 @media (max-width: 450px)
 {   
   #contenedor-foto-cv
@@ -898,130 +1009,4 @@ body
               transform: translateY(-800px);
       opacity: 0;
     }
-  }
-  
-  /* ============================================ C O N T A C T O (pag) ================================================== */
-  #contenido-contacto
-  {
-    animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  }
-  
-  #agradecimiento-contacto
-  {
-      border: 1px solid #c89c3c;
-      border-radius: 18px;
-      text-align: center;
-      color: white;
-      font-size: 20px;
-      background-color: #010a13;
-      opacity: 85%;
-      padding: 1rem;
-      margin-top: 2rem;
-  }
-
-  #texto-contacto
-  {
-    animation: tracking-in-expand 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-  }
-
-  #informacion-contacto
-  {
-      border: 1px solid #c89c3c;
-      border-radius: 18px;
-      text-align: left;
-      color: white;
-      font-size: 20px;
-      background-color: #010a13;
-      opacity: 85%;
-      padding: 1rem;
-      position: relative;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-  }
-
-  #input-mail, #input-razon
-  {
-    border: 1px solid #c89c3c;
-    border-radius: 18px;
-    font-size: 20px;
-    width: 100%;
-    height: 3.2rem;
-    background-color: #010a13;
-    opacity: 85%;
-    color: #c89c3c;
-    text-align: center;
-    animation: tracking-in-expand 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-  }
-
-  #input-razon
-  {
-    margin-top: 1.5rem;
-  }
-
-  #btn-enviar
-  {
-    border: 1px solid #c89c3c;
-    border-radius: 18px;
-    font-size: 20px;
-    width: 100%;
-    height: 3.2rem;
-    margin-top: 1.5rem;
-    background-color: #010a13;
-    opacity: 85%;
-    color: #c89c3c;
-  }
-
-  /* ============================================ MI  R E C O R R I D O (pag) ================================================== */
-  #contenedor-descripcion-recorrido
-  {
-      border: 1px solid #c89c3c;
-      border-radius: 18px;
-      text-align: left;
-      color: white;
-      font-size: 25px;
-      background-color: #010a13;
-      opacity: 85%;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      margin-top: 2rem;
-  }
-
-  #descripcion-recorrido
-  {
-      border-radius: 8px;
-      font-family: 'beaufort';
-      text-align: center;
-      width: 100%;
-      color: white;
-      padding: 0.5rem;
-      margin-top: 0.3rem;
-      font-size: 20px;
-      animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-  }
-
-  #input-usuario
-  {
-    border: 1px solid #c89c3c;
-    border-radius: 18px;
-    font-size: 20px;
-    width: 100%;
-    height: 3.2rem;
-    background-color: #010a13;
-    opacity: 85%;
-    color: #c89c3c;
-    text-align: center;
-    margin-top: 1.5rem;
-  }
-
-  #btn-buscar-recorrido
-  {
-    border: 1px solid #c89c3c;
-    border-radius: 18px;
-    font-size: 20px;
-    width: 100%;
-    height: 3.2rem;
-    margin-top: 1.5rem;
-    background-color: #010a13;
-    opacity: 85%;
-    color: #c89c3c;
   }
