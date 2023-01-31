@@ -322,6 +322,7 @@ body
     }
 
 /*====================================== Responsive Media-Querys ======================================*/
+/* Responsiveness de los BOTONES ("Ver mas, Volver") */
 @media (max-width: 1400px) 
 {
   /* RESPONSIVE - SECCION 1 */
@@ -341,21 +342,85 @@ body
     margin-bottom: 2rem;
     width: 99%;
   }
+
+  /* RESPONSIVE - SECCION 3 */
+  #btn-volver2
+  {
+    margin-bottom: 2rem;
+  }
 }
 
-@media (max-width: 850px) 
+/* Responsiveness del HEADER */
+@media (max-width: 1001px) 
 {
-  #foto-cv
-  {
-    width: 80px;
-    height: 80px;
-    margin-top: 10px;
-    margin-right: 25px;
-  }
-
   #opcion1, #opcion2, #opcion3
   {
     margin: 0px;
+  }
+}
+
+/* Responsiveness de la FOTO-CV (1°) */
+@media (min-width: 780px) 
+{
+  #foto-cv
+  {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  #contenedor-foto-cv
+  {
+    margin: 0px;  
+    margin-left: 55%;
+  }
+}
+
+/* Responsiveness de la FOTO-CV (2°) */
+@media (max-width: 540px)
+{   
+  #foto-cv
+  {
+    width: 110px;
+    height: 110px;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+}
+
+/* Responsiveness de la FOTO-CV (3°) */
+@media (max-width: 450px)
+{   
+  #contenedor-foto-cv
+  {
+      position: relative;
+      margin-left: 30%;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+  }
+}
+
+/* Responsiveness de las columnas informativas (1°) || MQuerys (Only min-widhts) */
+@media (max-width: 1210px)
+{
+  #columna-infoPersonal, #columna-carruselTrabajos
+  {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 800px)
+{
+  #columna-infoAcademica, #columna-expLaboral
+  {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 992px)
+{
+  #columna-tecnologias, #columna-preferencias
+  {
+    min-width: 100%;
   }
 }
 
