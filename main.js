@@ -135,7 +135,7 @@ function seleccionarEnBuscadorDinamico(esOpcionUno, esLoadingDePagina)
         btnAtributos.style.borderBottom = "2px solid #c89c3c";
         btnObjetivos.style.borderBottom = "0px solid #c89c3c";
 
-        filaObjetivos.style.animation  = "bounce-out-top 1.5s both";
+        filaObjetivos.style.animation  = "bounce-out-top 1.2s both";
         
         setTimeout(() => 
         {
@@ -143,8 +143,8 @@ function seleccionarEnBuscadorDinamico(esOpcionUno, esLoadingDePagina)
 
             // Entran los atributos con animation
             filaAtributos.removeAttribute("hidden");
-            filaAtributos.style.animation = "bounce-in-top 1.8s both";
-        }, 1800);
+            filaAtributos.style.animation = "bounce-in-top 1.2s both";
+        }, 1250);
 
         }
         else //Se selecciono la opcion "Objetivos"
@@ -152,7 +152,7 @@ function seleccionarEnBuscadorDinamico(esOpcionUno, esLoadingDePagina)
             btnObjetivos.style.borderBottom = "2px solid #c89c3c";
             btnAtributos.style.borderBottom = "0px solid #c89c3c";
             
-            filaAtributos.style.animation = "bounce-out-top 1.5s both";
+            filaAtributos.style.animation = "bounce-out-top 1.2s both";
             
             setTimeout(() => 
             {
@@ -160,8 +160,8 @@ function seleccionarEnBuscadorDinamico(esOpcionUno, esLoadingDePagina)
                 
                 // Entran los objetivos con animation
                 filaObjetivos.removeAttribute("hidden");
-                filaObjetivos.style.animation = "bounce-in-top 1.8s both";
-            }, 1800);
+                filaObjetivos.style.animation = "bounce-in-top 1.2s both";
+            }, 1250);
 
         }
     }

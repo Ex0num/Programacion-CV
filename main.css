@@ -435,6 +435,13 @@ body
   margin-top: 1.5rem;
 }
 
+#datos-github-textoError
+{
+  color: red;
+  font: 18px;
+  text-align: center;
+}
+
 #btn-buscar-recorrido
 {
   border: 1px solid #c89c3c;
@@ -446,6 +453,58 @@ body
   background-color: #010a13;
   opacity: 85%;
   color: #c89c3c;
+}
+
+#contenedor-datos-github
+{
+    border: 1px solid #c89c3c;
+    border-radius: 18px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    background-color: #010a13;
+    opacity: 85%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+#titulo-datos-github
+{
+  text-align: center;
+  font-size: 30px;
+}
+
+#datos-github
+{
+  font-size: 20px;
+}
+
+#githubUser-foto
+{
+  width: 150px;
+  height: 150px;
+  border-radius: 60%;
+  margin-bottom: 1rem;
+  border: 1px solid #c89c3c;
+}
+
+#githubUser-nombre, #githubUser-cuenta, #githubUser-ubicacion, 
+#githubUser-seguidores, #githubUser-siguiendo, #githubUser-biografia, #githubUser-url  
+{
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+#githubUser-biografia
+{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#githubUser-url
+{
+  font-size: 16px;
 }
 
 /*====================================== Responsive Media-Querys ======================================*/

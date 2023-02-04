@@ -25,9 +25,9 @@
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="/Programacion-CV/index.html" class="nav-link px-2" id="opcion1">Inicio</a></li>
-              <li><a href="/Programacion-CV/vistas/contacto/contacto.html" class="nav-link px-2" id="opcion2">Contacto</a></li>
-              <li><a href="/Programacion-CV/vistas/mi-recorrido/mi-recorrido.html" class="nav-link px-2" id="opcion3">Mi recorrido</a></li>       
+              <li><a href="../../index.html" class="nav-link px-2" id="opcion1">Inicio</a></li>
+              <li><a href="../contacto/contacto.html" class="nav-link px-2" id="opcion2">Contacto</a></li>
+              <li><a href="../mi-recorrido/mi-recorrido.html" class="nav-link px-2" id="opcion3">Mi recorrido</a></li>       
             </ul>
    
           </div>
@@ -44,6 +44,7 @@
       <div class="row">
 
         <div class="col">
+
           <section id="contenedor-descripcion-recorrido">
             <legend>¡Bienvenido/a a mi recorrido!</legend>
     
@@ -52,11 +53,32 @@
             Links y todo el acceso directo a la página de Github. ¡Podés buscar el tuyo también, probalo!
             </p>
     
-            <h1 style="text-align: center;">PROXIMAMENTE</h1>
+            <!-- <h1 style="text-align: center;">PROXIMAMENTE</h1> -->
     
             <input type="text" placeholder="Nombre público de usuario. Ej: Ex0num" value="ex0num" id="input-usuario">
+            <label id="datos-github-textoError" hidden>¡No se encontró una cuenta con ese nombre!</label>
             <button id="btn-buscar-recorrido">Buscar</button>
           </section>
+          
+          <section id="contenedor-datos-github">
+            <h1 class="h1 mb-3 fw-normal" id="titulo-datos-github">G i t h u b</h1>
+            <div class="separador-lineal"></div>
+                  <p id="datos-github">
+                      <img src="#" id="githubUser-foto" alt="Foto de Github del usuario buscado"><br>
+                      <label id="githubUser-nombre">Nombre de usuario</label><br>
+                      <div class="separador-lineal"></div>
+                      <label id="githubUser-ubicacion">Ubicacion</label><br>
+                      <label id="githubUser-cuenta">Nombre de cuenta</label><br>
+                      <div class="separador-lineal"></div>
+                      Seguidores: <label id="githubUser-seguidores">Seguidores</label><br>
+                      Siguiendo: <label id="githubUser-siguiendo">Siguiendo</label><br>
+                      <div class="separador-lineal"></div>
+                      <label id="githubUser-biografia">Biografía</label><br>
+                      <div class="separador-lineal"></div>
+                      <label id="githubUser-url">URL</label>
+                  </p>
+          </section>
+
         </div>
 
       </div>
